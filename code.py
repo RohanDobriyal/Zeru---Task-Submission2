@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""wallet_risk_scoring.py
-Round 2 Assignment: Wallet Risk Scoring From Scratch
-"""
 import os
 import time
 import requests
@@ -121,7 +117,7 @@ def main():
     df.loc[df["tx_count"] == 0, "score"] = 0
     out = df[["wallet_id", "score"]].sort_values("score", ascending=False)
     out.to_csv("wallet_scores.csv", index=False)
-    logger.info("✅ wallet_scores.csv written successfully.")
+    logger.info(" wallet_scores.csv written successfully.")
     print(out.head(10).to_string(index=False))
 
 if __name__ == "__main__":
