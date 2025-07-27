@@ -79,13 +79,3 @@ wallet_id,score
 ...
 0x0039f22efb07a647557c7c5d17854cfd6d489ef3,0
 ```
-
-
-
-- **Weights**: Modify the `WEIGHTS` dictionary to rebalance feature contributions.
-- **Additional features**: Extend `extract_features` to include collateral amounts or token balances.
-- **Alternative data source**: Swap Covalent calls with Etherscan, The Graph, or a direct Web3.py approach.
-
-## License
-
-This project is released under the **MIT License**. See [LICENSE](LICENSE.md) for details.
